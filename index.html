@@ -20,7 +20,7 @@ header { background-color: #636631;
          color: #cc66cc;
          text-align: right;
          padding: 0 20px;
-         border-bottom: 2px solid #000000; }		 
+         border-bottom: 2px solid #000000; }
 nav { float: left;
       width: 150px; }
 aside { float: right;
@@ -34,11 +34,14 @@ footer { font-size: .70em;
          color: #006600;
          background-color: #FFFFFF;
          padding-top: 10px;
-         clear: both; }		 
+         clear: both;
+         grid-row: 3/4;
+         grid-column: 1/4;
+        }
 h1 { margin-top: 0;
      font-size: 3em;
      text-align: left;
-     text-shadow: 2px 2px 2px #000000; }	 
+     text-shadow: 2px 2px 2px #000000; }
 header a {font-size: 0.80em; }
 header a:link, header a:visited { color: #FFFFFF; }
 header a:focus, header a:hover { color: #EEEEEE; }
@@ -62,8 +65,14 @@ aside h3 { padding-bottom: 2px;
            font-size: 0.90em;
 		   color: #CC66CC; }
 .news { font-size: 0.80em;
-        margin: 10px; }		
-</style> 
+        margin: 10px; }
+nav {grid-row: 2/3;
+    grid-column: 1/2; }
+main { grid-row: 2/3;
+    grid-column: 2/3; }
+aside { grid-row: 2/3;
+    grid-column: 3/4; }
+</style>
 </head>
 <body>
 <div id="container">
@@ -99,6 +108,6 @@ Newport Wilderness Society</a> sponsors free meadow hikes at 9am every Saturday.
     <footer> Copyright &copy; 2018 Door County Wild Flowers<br>
     </footer>
   </main>
-</div> 
+</div>
 </body>
 </html>
